@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      box-sizing: border-box;
+      font-size: small;
+      margin: 0;
+      padding: 0;
+      font-family: "Nunito", sans-serif;
+    }
+    /*... NavBar..*/
+    ul.navbar-nav li {
+      margin: auto 13px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.655606px;
+      color: #2a2b2a;
+    }
+    ul.navbar-nav button {
+      background-color: #2dce89;
+      border-radius: 7px;
+      padding: 10px 45px;
+      color: #fff;
+    }
+    ul.navbar-nav button:hover {
+      color: #fff;
+      background: #000;
+    }
+    .navbar {
+      padding: 12px;
+    }
+    /*...Main Section...*/
+    section.main {
+      background-image: url("https://res.cloudinary.com/djpwz2c0f/image/upload/v1571163019/Group_145_1_alldlu.png");
+      background-position: center;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 643px;
+      min-height: 100vh;
+      background-color: D7D9CE;
+
+    }
+    .content {
+      font-weight: bold;
+      padding-top: 25vh;
+      z-index: 1;
+      text-align: left;
+      width: 35%;
+      margin-left: 15%;
+    }
+    .content .upgrade-text2 {
+      color: black;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 55px;
+      letter-spacing: 0.655606px;
+    }
+
+      .content .upgrade-text1 {
+      font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+        }      
+    }
+    .content .hng-text {
+      font-weight: normal;
+      font-size: 1.5em;
+      line-height: 151.2%;
+      color: black;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    section.main a button {
+      background: #44cf6c;
+      border-radius: 7px;
+      font-size: 20px;
+      padding: 8px 70px;
+      color: #fff;
+      margin-top: 12px;
+      border-style: none;
+    }
+    section.main a button:hover {
+      color: #fff;
+      background: rgba(68, 207, 108, 0.35);
+    }
+ 
+
+   
+  
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://res.cloudinary.com/charlene04/image/upload/v1570756471/logo_1_ekral5.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Hire a Grad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="faq.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><button>Start Learning</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="main text-center">
+      <div class="content">
+        <p class="upgrade-text1"> N50,000 for 3 months full training  </p>
+        <p class="upgrade-text2">Full Stack Development</p>
+        <p class="hng-text">
+          The HNG internship is a 3-month remote internship designed ---to find
+          and develop the most talented software developers.
+        </p>
+        <a href="#"><button>Start learning</button></a>
+      </div>
+    </section>
+
+   
